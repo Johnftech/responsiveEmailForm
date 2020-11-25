@@ -1,0 +1,77 @@
+main {
+    padding: 20px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    padding: 25px;
+    padding-left: 15px;
+}
+
+h1 {
+    font-weight: 500;
+    margin: 15px;
+}
+
+legend {
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: gray;
+}
+
+fieldset {
+    padding: 25px;
+    border-radius: 15px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  height: 25px;
+  margin-bottom: 25px;
+  
+}
+
+form textarea {
+    justify-content: center;
+    color: rgb(35, 35, 41);
+    height: 33px;
+    font-size: 15px;
+}
+
+form input[type=text], form input[type=email] {
+    color: rgb(35, 35, 41);
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+form input[type=text]#name, #email {
+    width: 300px;
+
+
+}
+@media all and (min-width: 800px) {
+    h1 {
+        text-align: left;
+        margin-top: 5px;
+    }
+    section {
+        flex-direction: row;
+        padding: 15%;
+        justify-content: center;
+    }
+
+    button:hover { 
+        color: #30a52c; 
+      }
+
+
+}
