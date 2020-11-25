@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Responsive Email Form</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <main>
+            
+            <!--functional email form include name, email, message fields-->
+            <section class="contact">
+                <h1>Responsive Email Form</h1>
+                <form action="https://formspree.io/f/xqkglozp"
+                method="post">
+                    <fieldset>
+                        <legend> Give me your information</legend>
+                        <div>
+                            <label for="name">Name:</label>
+                            <input id="name" type="text" name="userName" placeholder="Enter your full name" required>
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input id="email" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter your email" required>
+                        </div>
+                        <div>
+                            <label for="message">Include your message:</label>
+                            <textarea name="message" id="message" maxlength="175" placeholder="What are you looking to get coded?"></textarea>
+                            <button type="submit">Send Email</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+
+        </footer>
+       
+        <script src="script.js"></script>
+    </body>
+</html>
